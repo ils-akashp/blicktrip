@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #5c524d;
+    color: #fff;
+    &__brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    &__toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      transition: transform 0.3s ease-in-out;
+  
+      &-icon {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 4px;
+  
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          transition: transform 0.3s ease-in-out;
+        }
+  
+        &::before {
+          transform-origin: top left;
+        }
+  
+        &::after {
+          transform-origin: bottom left;
+        }
+      }
+    }
+  
+    &__menu {
+      display: flex;
+    // display: none;
+      flex-direction: row;
+      list-style-type: none;
+  
+      &-item {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        a {
+          color: #fff;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    &.open {
+      .navbar__toggle-icon {
+        transform: rotate(45deg);
+  
+        &::before {
+          transform: rotate(45deg) translateY(6px);
+        }
+  
+        &::after {
+          transform: rotate(-45deg) translateY(-6px);
+        }
+      }
+  
+      .navbar__menu {
+        display: flex;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .navbar {
+        align-items: baseline;
+
+        &__toggle {
+          display: block;
+          position: absolute;
+          right: 40px;
+        }
+  
+        &__menu {
+            display: none;
+          flex-direction: column;
+        //   margin-left: auto;
+        position: absolute;
+        left: 0;
+        top: 54px;
+        padding: 0;
+  
+          &-item {
+            // margin-bottom: 0;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      align-items: baseline;
+    }
+  }
+  

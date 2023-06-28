@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "image": "/assets/events/event-1.png",
+      "name": "AIGA Design Conference",
+      "tickets": 2,
+      "date": "2023-07-15"
+    },
+    {
+        "id": 2,
+        "image": "/assets/events/event-2.png",
+        "name": "Understanding Color Theory: The Color Wheel And Finding Meaning",
+        "tickets": 100,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 3,
+        "image": "/assets/events/event-3.png",
+        "name": "RGD Design Thinkers",
+        "tickets": 0,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 4,
+        "image": "/assets/events/event-4.png",
+        "name": "What Design Can Do",
+        "tickets": 100,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 5,
+        "image": "/assets/events/event-5.png",
+        "name": "Perth UX Camp",
+        "tickets": 100,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 6,
+        "image": "/assets/events/event-6.png",
+        "name": "Sofia Design",
+        "tickets": 100,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 7,
+        "image": "/assets/events/event-7.png",
+        "name": "Design Indaba Conference",
+        "tickets": 100,
+        "date": "2023-07-15"
+      },
+      {
+        "id": 8,
+        "image": "/assets/events/event-8.png",
+        "name": "TYPO Berlin",
+        "tickets": 100,
+        "date": "2023-07-15"
+      }
+  ]
+  
